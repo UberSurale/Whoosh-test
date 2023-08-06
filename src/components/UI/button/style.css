@@ -1,0 +1,26 @@
+.header__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #2B6BF3;
+    background-image: url("../../../assets/images/Lock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.header__button:hover {
+    opacity: 0.7;
+}
+
+
+@media (max-width: 1200px) {
+    .header__button {
+        order: -1;
+        background-image: url("../../../assets/images/profile-icon.svg");
+        background-color: transparent;
+        margin-left: 0;
+    }
+}

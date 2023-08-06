@@ -1,0 +1,71 @@
+.copyright__wrapper {
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 5px;
+    padding-bottom: 56px;
+}
+
+@media (max-width: 600px) {
+    .copyright__wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 33px;
+    }
+}
+
+.copyright__link {
+    margin-right: 60px;
+}
+
+@media (max-width: 600px) {
+    .copyright__link {
+        margin-right: 0;
+        order: 2;
+        margin-top: 10px;
+    }
+}
+
+.copyright__info,
+.copyright__policy {
+    margin: 0;
+    align-self: center;
+    
+    color: #1d253c6b;
+    font-family: "Intro-Book";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 600px) {
+    .copyright__info {
+        margin-top: 26px;
+    }
+}
+
+.copyright__policy {
+    padding-left: 23px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .copyright__policy {
+        order: -1;
+    }
+}
+
+.copyright__policy::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 13px;
+    background-image: url("../../../assets/images/security-icon.svg");
+    left: 0;
+    top: 5px;
+}

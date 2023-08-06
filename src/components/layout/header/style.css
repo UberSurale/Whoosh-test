@@ -1,0 +1,39 @@
+.header {
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #F8FAFF;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .header__wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__wrapper {
+        width: 94%;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        border-bottom: 1px solid #2b6af32a;
+    }
+}

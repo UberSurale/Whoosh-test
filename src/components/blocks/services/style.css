@@ -1,0 +1,122 @@
+.services {
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 72px;
+    margin-top: 47px;
+    position: relative;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-color: #F8FAFF;
+}
+
+@media (max-width: 1040px) {
+    .services {
+        border-radius: initial;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        padding-top: 57px;
+        padding-bottom: 39px;
+    }
+}
+
+.services__wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    width: 183px;
+    height: 467px;
+    background-image: url("../../../assets/images/services-decor.png");
+    background-repeat: no-repeat;
+    right: 0;
+    top: -90px;
+}
+
+@media (max-width: 1040px) {
+    .services::before {
+        display: none;
+    }
+}
+
+.services__list {
+    display: flex;
+    list-style: none;
+    margin-top: 39px;
+    margin-bottom: 36px;
+    gap: 50px;
+    padding: 0;
+    justify-content: center;
+}
+
+@media (max-width: 1180px) {
+    .services__list {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .services__list {
+        margin-top: 18px;
+        gap: 20px;
+    }
+}
+
+.services__item {
+    width: 300px;
+}
+
+.services__description {
+    margin: 0;
+    margin-top: 29px;
+    color: #1d253c6b;
+    text-align: center;
+    font-family: "Intro-Book";
+}
+
+@media (max-width: 600px) {
+    .services__description {
+        line-height: 1.6;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .services__description br {
+        display: none;
+    }
+}
+
+.services__button {
+    background-color: #fff;
+    border-radius: 32px;
+    background-color: #FFDD2D;
+    color: #ffffff;
+    padding: 13px 100px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-family: "Intro-Book";
+    font-size: 18px;
+    color: #1D253C;
+}
+
+.services__button:hover {
+    color: #ffffff;
+}
+
+.services__title-wrapper {
+    text-align: center;
+}
+
+.services__button-wrapper {
+    text-align: center;
+}

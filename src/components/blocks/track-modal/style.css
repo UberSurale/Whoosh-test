@@ -1,0 +1,32 @@
+.track-modal {
+    padding: 31px 40px;
+    background-color: #FFDD2D;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-radius: 8px;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.08));
+    width: 286px;
+}
+
+@media (max-width: 600px) {
+    .track-modal {
+        padding: 17px 16px 26px 16px;
+        width: 91%;
+        gap: 15px;
+    }
+}
+
+.track-modal__input {
+    padding: 8px 182px 8px 16px;
+    font-family: "Intro-Book";
+    font-size: 16px;
+    color: #1d253c6b;
+    line-height: 1.5;
+    border: none;
+    border-radius: 4px;
+
+    background-image: url("../../../assets/images/track-search.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}

@@ -1,0 +1,208 @@
+.order-modal {
+    background-color: #ffffff;
+    filter: drop-shadow(0px 8px 16px rgba(43, 107, 243, 0.08));
+    border: 2px solid #C2D2F4;
+    border-radius: 8px;
+    width: 360px;
+}
+
+@media (max-width: 600px) {
+    .order-modal {
+        width: 100%;
+    }
+}
+
+.order-modal__button {
+    border-radius: 32px;
+    background-color: #2B6BF3;
+    color: #ffffff;
+    padding: 13px 121px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-family: "Intro";
+    font-size: 18px;
+}
+
+.order-modal__button:hover {
+    background-color: #1252DB;
+}
+
+.order-modal__button--reset {
+    background: none;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    font-family: "Intro-Book";
+    font-size: 16px;
+}
+
+.order-modal__button--reset::before {
+    content: "x";
+    color: #666666;
+    margin-right: 8px;
+}
+
+.order-modal__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 34px;
+}
+
+.order-modal__form {
+    padding: 34px 25px 24px 29px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .order-modal__form {
+        padding: 28px 16px 24px 16px;
+    }
+}
+
+.order-modal__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.order-modal__inputs::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 52px;
+    background-image: url("../../../assets/images/line-order-icon.svg");
+    left: 10px;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.order-modal__label {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+
+    color: #C4CEE5;
+    font-family: "Intro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    
+    gap: 6px;
+}
+
+.order-modal__label:hover {
+    opacity: 0.7;
+}
+
+.order-modal__input:active,
+.order-modal__input:focus{
+    outline: none;
+    border-color: #2B6BF3;
+}
+
+@media (max-width: 600px) {
+    .order-modal__label {
+        gap: 0;
+    }
+}
+
+.order-modal__input {
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #2b6bf329;
+
+    color: #1D253C;
+
+    font-family: "Intro-Book";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.order-modal__label--pickup,
+.order-modal__label--drop {
+    position: relative;
+}
+
+.order-modal__label--pickup::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../assets/images/pickup-icon.svg");
+    left: 0;
+    top: 50%;
+    transform: translateY(-20%);
+}
+
+.order-modal__label--drop::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../assets/images/drop-icon.svg");
+    left: 0;
+    top: 50%;
+    transform: translateY(-20%);
+}
+
+.tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tooltip-toggle__image {
+    fill: #DDE7FD;
+}
+
+.tooltip-toggle:hover .tooltip-toggle__image {
+    fill: #000;
+}
+
+.tooltip-text {
+    color: #1D253C;
+    font-family: "Intro-Book";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    display: block;
+    width: 252px;
+    padding: 8px 16px;
+    border: 1px solid #C2D2F4;
+    box-shadow: 0px 16px 16px 0px rgba(73, 99, 176, 0.16);
+    position: absolute;
+    top: 38px;
+    left: -130px;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+}
+
+.tooltip {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 154px;
+    width: 25px;
+    height: 25px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
+}

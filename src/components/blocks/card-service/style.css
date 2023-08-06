@@ -1,0 +1,16 @@
+.card__description--services {
+    font-family: "Intro-Book";
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1d253c6b;
+    margin: 0;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .card__description--services {
+        text-align: center;
+        margin-top: 12px;
+    }
+}

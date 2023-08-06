@@ -1,0 +1,84 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 91px;
+    padding-bottom: 96px;
+}
+
+@media (max-width: 600px) {
+    .advantages {
+        padding-top: 20px;
+        padding-bottom: 59px;
+    }
+}
+
+.advantages__wrapper {
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.advantages__description {
+    font-family: "Intro-Book";
+    font-size: 22px;
+    line-height: 1.4;
+    color: #1d253c6b;
+    text-align: center;
+    margin: 0;
+    margin-top: 29px;
+    margin-bottom: 39px;
+}
+
+@media (max-width: 600px) {
+    .advantages__description br {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .advantages__description {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-top: 13px;
+        margin-bottom: 21px;
+    }
+}
+
+.advantages__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1180px) {
+    .advantages__list {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
+.advantages__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+@media (max-width: 1180px) {
+    .advantages__item:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+.advantages__title-wrapper {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .advantages__title-wrapper {
+        width: 88%;
+        margin: 0 auto;
+    }
+}

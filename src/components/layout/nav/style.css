@@ -1,0 +1,117 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 188px;
+    position: relative;
+    margin-left: 65px;
+}
+
+.nav__button {
+    border: none;
+    border-radius: 32px;
+    background: #2B6BF3;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Intro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.77;
+
+    padding: 10px 29px;
+
+    margin-top: 220px;
+}
+
+@media (min-width: 1200px) {
+    .nav__item--hidden,
+    .nav__button--hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px 32px 16px;
+        background-color: #ffffff;
+        gap: 0;
+        filter: drop-shadow(0px 16px 16px rgba(73, 99, 176, 0.16));
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav--closed {
+        display: none;
+    }
+}
+
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 36px;
+    font-size: 16px;
+    font-family: "Intro-Book", "Arial", sans-serif;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #666666;
+}
+
+.nav__link:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 1200px) {
+    .nav__burger-button {
+        display: none;
+    }
+}
+
+.nav__burger-button {
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("../../../assets/images/burger-icon.svg");
+    cursor: pointer;
+}
+
+.nav__toggle-close {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .nav__toggle-close {
+        display: block;
+        position: absolute;
+        right: 18px;
+        border: none;
+        background-image: url("../../../assets/images/close-icon.svg");
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

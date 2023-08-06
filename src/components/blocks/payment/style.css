@@ -1,0 +1,44 @@
+.payment {
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 79px;
+    padding-bottom: 86px;
+}
+
+@media (max-width: 600px) {
+    .payment {
+        padding-top: 50px;
+        padding-bottom: 55px;
+    }
+
+    .payment__item {
+        opacity: 0.3;
+    }
+
+    .payment__item.glide__slide--active {
+        opacity: 1;
+    }
+}
+
+.payment__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 52px;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .payment__list {
+        margin-top: 40px;
+    }
+}
+
+.payment__slider {
+    overflow: hidden;
+}
+
+.payment__title-wrapper {
+    text-align: center;
+}
